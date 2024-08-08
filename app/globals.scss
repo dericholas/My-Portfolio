@@ -11,3 +11,12 @@ body {
 
 
 }
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    &__menu {
+        list-style: none;
+        
+    }
+}
