@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 body {
     display: flex;
@@ -14,9 +15,54 @@ body {
 
 .navbar {
     display: flex;
-    justify-content:space-between;
-    &__menu {
-        list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    &__left {
+        display: flex;
+        align-items: center;
+        &__logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+    &__center {
+        display: flex;
+        align-items: center;
+        &__socials {
+            list-style: none;
+            display: flex;
+            &__icon {
+                color: #ffffff;
+                margin: 0 .5rem 0 .5rem;
+                text-decoration: none;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        &__menu {
+            list-style: none;
+            display: flex;
+            margin-right: 3rem;
+            &__link {
+                list-style-type: none;
+                display: flex;
+                margin: 0 1rem 0 1rem;
+                padding: 0;
+                color: #ffffff;
+                text-decoration: none;
+            }
+            &__link:hover {
+                color: rgb(243, 243, 57);
+            }
+            
+        }
         
     }
 }
